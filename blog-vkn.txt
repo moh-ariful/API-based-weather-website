@@ -1,2 +1,3 @@
 Membuat blog serderhana dengan framework Django versi 3
 Dilengkapi fitur image dan paginator
+Hanya user terdaftar dan login yang bisa membuat post
