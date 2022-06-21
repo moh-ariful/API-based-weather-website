@@ -1,0 +1,3 @@
+Rencana fitur blog:
+- Ada fitur update post
+- Ada fitur delete post
