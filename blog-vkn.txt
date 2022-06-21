@@ -1,0 +1,1 @@
+Membuat blog serderhana dengan framework Django versi 3
