@@ -1,2 +1,2 @@
-# blog-vkn
-Membuat blog serderhana dengan Django
+# web api based
+Membuat web cuaca api based
