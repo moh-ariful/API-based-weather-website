@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    
+    <div class="card align-items-center" style="width: 79rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h1 class="card-title">Laporan Cuaca</h1>
+          <br>
+          <br>
+          <form method="POST"> 
+            {% csrf_token %}
+            <input type="text" placeholder="Masukkan Kota" name="city">
+            <button type="submit">Tekan</button>
+    
+        </form>
+          <p class="card-text"><img src="http://openweathermap.org/img/w/{{ icon }}.png" width="200px" alt=""></p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><h1>{{ description }}</h1></li>
+          <li class="list-group-item"><h1>{{ temp }}</h1></li>
+          <li class="list-group-item"><h3>{{ day }}</h3></li>
+          <li class="list-group-item"><h3>{{ city }}</h3></li>
+        </ul>
+        <div class="card-body">
+          <p>Created by:</p>
+          <a href="https://www.linkedin.com/in/moh-ariful-2ab529243/" class="card-link">Moh Ariful</a>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
+
